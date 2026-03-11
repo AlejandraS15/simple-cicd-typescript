@@ -31,30 +31,35 @@
     <script src="divide.js"></script>
 
     <script>
-      document
-        .getElementById("btnCalc")
-        .addEventListener("click", function () {
-          var a = Number(document.getElementById("num1").value) || 0;
-          var b = Number(document.getElementById("num2").value) || 0;
-          var operation = document.getElementById("operation").value;
-          var result;
+      document.getElementById("btnCalc").addEventListener("click", function () {
+        const a = Number(document.getElementById("num1").value);
+        const b = Number(document.getElementById("num2").value);
+        const operation = document.getElementById("operation").value;
 
-          if (operation === "sum") {
-            result = window.sum(a, b);
-          } else if (operation === "subtract") {
-            result = window.subtract(a, b);
-          } else if (operation === "multiply") {
-            result = window.multiply(a, b);
-          } else if (operation === "divide") {
-            try {
-              result = window.divide(a, b);
-            } catch (error) {
-              result = "Error: division by zero";
-            }
+        let result;
+
+        if (operation === "sum") {
+          result = window.sum(a, b);
+        } 
+        
+        else if (operation === "subtract") {
+          result = window.subtract(a, b);
+        } 
+        
+        else if (operation === "multiply") {
+          result = window.multiply(a, b);
+        } 
+        
+        else if (operation === "divide") {
+          if (b === 0) {
+            result = "Error: division by zero";
+          } else {
+            result = window.divide(a, b);
           }
+        }
 
-          document.getElementById("result").textContent = result;
-        });
+        document.getElementById("result").textContent = result;
+      });
     </script>
   </body>
 </html>
