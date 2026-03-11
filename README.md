@@ -1,5 +1,7 @@
 # 🧮 simple-cicd-typescript
 
+Alejandra Suarez Sepulveda
+
 Este proyecto es una introducción práctica al desarrollo con **TypeScript**, pruebas automatizadas con **Jest**, análisis estático usando **ESLint**, y un flujo de **CI/CD** configurado con **GitHub Actions**.
 
 El objetivo final es construir una **calculadora de números enteros**.  
@@ -48,4 +50,6 @@ package-lock.json      # Bloqueo de versiones de dependencias
 sum.ts                 # Implementación de la operación de suma (TypeScript)
 sum.test.ts            # Prueba unitaria para la operación de suma
 
-tsconfig.json          # Configuración del compilador de TypeScript 
+tsconfig.json          # Configuración del compilador de TypeScript
+
+
