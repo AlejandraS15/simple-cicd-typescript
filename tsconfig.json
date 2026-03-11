@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "none",
+    "module": "commonjs",
     "outDir": "dist",
     "strict": true,
     "rootDir": ".",
     "skipLibCheck": true
   },
   "include": ["*.ts"],
-  "exclude": ["node_modules", "*.test.ts"]
+  "exclude": ["node_modules"]
 }
