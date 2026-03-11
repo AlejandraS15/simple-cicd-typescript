@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "none",
-    "outDir": ".",
+    "outDir": "dist",
     "strict": true,
     "rootDir": ".",
     "skipLibCheck": true
